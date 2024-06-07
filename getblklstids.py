@@ -1,4 +1,5 @@
 import requests
+import yaml
 
 # Aco's ergexplorer nsfw and scam tokens endpoints
 endpoints = [
@@ -16,24 +17,19 @@ def fetch_token_ids(endpoint):
         print(f"Failed to fetch data from {endpoint['title']} endpoint")
         return []
 
-# Function to save token IDs in a markdown file
-def save_to_markdown(token_ids, filename, title):
+# Function to save token IDs in a YAML file
+def save_to_yaml(token_ids, filename, title):
     with open(filename, "a") as file:  # Use "a" for append mode
-        file.write(f"## {title} Token IDs\n\n")
-        file.write("| Token ID |\n")
-        file.write("|----------|\n")
-        for token_id in token_ids:
-            file.write(f"| {token_id} |\n")
-        file.write("\n")
+        yaml.dump({title: token_ids}, file, default_flow_style=False)
 
 # Main function
 def main():
-    with open("blacklist.md", "w") as file:
+    with open("blacklist.yaml", "w") as file:
         file.write("# Blacklisted Token IDs\n\n")
     for endpoint in endpoints:
         token_ids = fetch_token_ids(endpoint)
         if token_ids:
-            save_to_markdown(token_ids, "blacklist.md", endpoint["title"])
+            save_to_yaml(token_ids, "blacklist.yaml", endpoint["title"])
 
 if __name__ == "__main__":
     main()
