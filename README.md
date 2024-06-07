@@ -12,7 +12,7 @@ To easily keep the list up to date, use the provided Python script. Follow these
 
 2. Run the script using the following command:
    
-   ```python getblklstyml.py ```
+   ```python getblklst.py ```
 
 This will generate an updated YAML file containing the blacklist. You can then push this file to this repository.
 
