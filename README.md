@@ -1,6 +1,6 @@
 # Token ID Blacklist
 
-This repository contains a list of token IDs marked as NSFW (Not Safe For Work) or scam based on reporting from ErgExplorer.
+This repository contains a list of token IDs marked as NSFW (Not Safe For Work) or scam based on reporting from [ErgExplorer](https://ergexplorer.com/).
 
 ## Usage
 
