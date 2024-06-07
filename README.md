@@ -18,7 +18,7 @@ This will generate an updated YAML file containing the blacklist. You can then p
 
 ## Contributing
 
-If you find any token IDs that should be added to the blacklist, please report it to @AcoHelperBot (on Telegram) with /report command.
+If you find any token IDs that should be added to the blacklist, please report it to `@AcoHelperBot` (on Telegram) with /report command.
 
 example:
 
