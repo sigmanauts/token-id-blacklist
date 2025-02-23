@@ -14,7 +14,7 @@ To easily keep the list up to date, use the provided Python script. Follow these
    
    ```python getblklst.py ```
 
-This will generate an updated YAML file containing the blacklist. You can then push this file to this repository.
+This will generate updated YAML and JSON files containing the blacklist. You can then push the files to this repository.
 
 ## Contributing
 
