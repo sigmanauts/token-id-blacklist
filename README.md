@@ -7,7 +7,7 @@ This repository contains a list of token IDs marked as NSFW (Not Safe For Work) 
 To easily keep the list up to date, use the provided Python script or the prebuilt executable.  
 
 ### **Option 1: Using the Prebuilt Executable**  
-For convenience, a standalone executable is available in the [Releases](https://github.com/YOUR-REPO/releases). You can download it and run it directly without needing Python:  
+For convenience, a standalone executable is available in the [Releases](https://github.com/sigmanauts/token-id-blacklist/releases). You can download it and run it directly without needing Python:  
 
 ```sh
 ./update_blacklist
